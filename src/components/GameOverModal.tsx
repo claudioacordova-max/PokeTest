@@ -107,9 +107,9 @@ function GameOverModal({
         </div>
 
         {/* ESTADÍSTICAS */}
-        <div className="mt-7 grid grid-cols-2 gap-4">
+        <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
           {/* ACIERTOS */}
-          <div className="flex items-center gap-4 rounded-2xl bg-green-50 px-5 py-5">
+          <div className="flex min-w-0 items-center gap-3 rounded-2xl bg-green-50 px-4 py-4 sm:gap-4 sm:px-5 sm:py-5">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-green-500 text-white shadow">
               <Check className="h-8 w-8" strokeWidth={3} aria-hidden="true" />
             </div>
@@ -124,7 +124,7 @@ function GameOverModal({
           </div>
 
           {/* FALLOS */}
-          <div className="flex items-center gap-4 rounded-2xl bg-red-50 px-5 py-5">
+          <div className="flex min-w-0 items-center gap-3 rounded-2xl bg-red-50 px-4 py-4 sm:gap-4 sm:px-5 sm:py-5">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-red-500 text-white shadow">
               <X className="h-8 w-8" strokeWidth={3} aria-hidden="true" />
             </div>
