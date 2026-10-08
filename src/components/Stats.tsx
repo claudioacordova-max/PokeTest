@@ -9,7 +9,13 @@ function Stats({ count, lives, time }: Props) {
     <section
       className="
         flex w-full items-center justify-center
-        gap-8 py-8
+        gap-2 px-2 py-6
+        sm:gap-8 sm:py-8
+        [&_svg]:max-sm:size-6
+        [&_.h-20]:max-sm:h-12
+        [&_.w-20]:max-sm:w-12
+        [&_.gap-4]:max-sm:gap-1
+        [&_.text-4xl]:max-sm:text-xl
       "
     >
       <Counter count={count} />
